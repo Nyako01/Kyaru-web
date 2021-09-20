@@ -15,7 +15,8 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../fonts/noto-sans-jp-v28-latin-regular.svg#NotoSansJP")
-      format("svg"); /* Legacy iOS */
+      format("svg") /* Legacy iOS */,
+      url('https://www.fontmirror.com/app_public/files/t/1/2020/12/NotoSansJP-Thin.otf')format("opentype")
 }
 
 html {

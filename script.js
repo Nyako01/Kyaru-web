@@ -66,5 +66,5 @@ $(document).ready(async function () {
   loadCmd(param)
   $('#categoryMusic').click(() => loadCmd({ category: 'music' }));
   $('#categorySettings').click(() => loadCmd({ category: 'settings' }));
-
+  $('#categoryMisc').click(() => loadCmd({ category: 'misc' }));
 });
