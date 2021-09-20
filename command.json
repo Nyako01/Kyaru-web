@@ -1,0 +1,91 @@
+{
+    "music": [
+      {
+        "name": "play",
+        "description": "Play a music from youtube",
+        "usage": "k! play [ music title | youtube URL ]",
+        "example": "k! play https://www.youtube.com/watch?v=mP9ev3syb54"
+      },
+      {
+        "name": "queue",
+        "description": "Check the music queue",
+        "example": "k! queue"
+      },
+      {
+        "name": "remove",
+        "description": "Remove specific song from queue",
+        "usage": "k! remove [ song's position ]",
+        "example": "k! remove 3"
+      },
+      {
+        "name": "disconnect",
+        "description": "Disconnect from voice channel",
+        "example": "k! disconnect"
+      },
+      {
+        "name": "next",
+        "description": "Skip to next song",
+        "example": "k! next"
+      },
+      {
+        "name": "previous",
+        "description": "Back to the previous song",
+        "example": "k! previous"
+      },
+      {
+        "name": "repeat",
+        "description": "Repeat a song or the whole song in the queue",
+        "usage": "k! repeat [ all | single | disable ]",
+        "example": "k! repeat"
+      },
+      {
+        "name": "shuffle",
+        "description": "Shuffle position song in the queue",
+        "example": "k! shuffle"
+      },
+      {
+        "name": "skipto",
+        "description": "Skip to specific song position",
+        "usage":"k! skipto [ song's position ]",
+        "example": "k! skipto 5"
+      },
+      {
+        "name": "clear",
+        "description": "Delete all songs in queue",
+        "example": "k! clear"
+      },
+      {
+        "name": "pause",
+        "description": "Pause the currently playing song",
+        "example": "k! pause"
+      },
+      {
+        "name": "resume",
+        "description": "Continue the currently playing song",
+        "example": "k! resume"
+      },
+      {
+        "name": "nowplaying",
+        "description": "Display the currently playing song",
+        "example": "k! nowplaying"
+      },
+      {
+        "name": "myplaylist",
+        "description": "Private playlist that can be set and played on all servers \n<li>Sub command: add [ song position in queue | youtube url ], delete [ song position in list], play, list</li>",
+        "usage": "k! myplaylist < sub command >",
+        "example": "k! myplaylist play"
+      },
+      {
+        "name": "join",
+        "description": "Join to voice channel",
+        "example": "k! join"
+      }
+    ],
+    "settings": [
+        {
+          "name": "prefix",
+          "description": "Change to new prefix",
+          "example": "k! prefix n!"
+        }
+      ]
+  }
