@@ -271,7 +271,7 @@ details > ul {
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.40)
   );
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
@@ -313,7 +313,7 @@ details > ul {
 footer{
   background-color: #202020;
   height: 30vh;
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;

@@ -67,4 +67,5 @@ $(document).ready(async function () {
   $('#categoryMusic').click(() => loadCmd({ category: 'music' }));
   $('#categorySettings').click(() => loadCmd({ category: 'settings' }));
   $('#categoryMisc').click(() => loadCmd({ category: 'misc' }));
+  $('#Command').click(() => { $('.Command').css('display', 'flex'); });
 });
