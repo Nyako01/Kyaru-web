@@ -31,7 +31,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #8b7f9c;
+  background: #9a4d75;
   border-radius: 14px;
 }
 
@@ -41,6 +41,16 @@ body {
 }
 
 p {
+  color: white;
+  font-family: 'Noto Sans';
+}
+
+a {
+  color: white;
+  font-family: 'Noto Sans';
+}
+
+h1 {
   color: white;
   font-family: 'Noto Sans';
 }
@@ -284,10 +294,39 @@ details > ul {
   width: 70vw;
   margin-top: 10vh;
   margin-left: 4vw;
+  margin-bottom: 5vh;
   border: none;
   border-color: #e1cd9b;
   border-style: solid;
   border-radius: 18px;
   text-align: center;
+  height: 90vh;
   background-color: #beaacf8a;
+}
+
+#cmd {
+  overflow: auto;
+  height: 75vh;
+  margin-right: 5px;
+}
+
+footer{
+  background-color: #202020;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+#footerTitle{
+margin-left: 20vw;
+width: 20vw;
+}
+
+#footerMain{
+  margin-left: 2vw;
+  width: 15vw;
 }

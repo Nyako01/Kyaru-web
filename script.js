@@ -27,11 +27,11 @@ $(document).ready(async function () {
 
   const loadCmd = (paramater) => {
     $('#cmdList').empty();
-    $('#cmdList').append('<p>Commands list</p>');
+    $('#cmdList').append('<p>Commands list</p> <div id="cmd"></div>');
     switch (paramater.category) {
       case 'settings':
         json.settings.forEach(element => {
-          $('#cmdList').append(`<details>
+          $('#cmd').append(`<details>
           <summary>${element.name}</summary>
           <li>Description: ${element.description}</li>
           <li>Example: ${element.example}</li>
@@ -41,7 +41,7 @@ $(document).ready(async function () {
 
       case 'misc':
         json.misc.forEach(element => {
-          $('#cmdList').append(`<details>
+          $('#cmd').append(`<details>
             <summary>${element.name}</summary>
             <li>Description: ${element.description}</li>
             <li>Example: ${element.example}</li>
@@ -52,7 +52,7 @@ $(document).ready(async function () {
       default:
         json.music.forEach(element => {
           const usage = (element.usage) ? '<li>Usage: ' + element.usage + '</li>' : ''
-          $('#cmdList').append(`<details>
+          $('#cmd').append(`<details>
           <summary>${element.name}</summary>
           <li>Description: ${element.description}</li>
           ${usage}
