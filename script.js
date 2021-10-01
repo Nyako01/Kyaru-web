@@ -25,6 +25,10 @@ $(document).ready(async function () {
   const json = await $.getJSON("./command.json")
   console.log(json)
 
+  $('body').bind('orientationchange', function(e) {
+    console.log(e)
+});
+
   const loadCmd = (paramater) => {
     $('#cmdList').empty();
     $('#cmdList').append('<p>Commands list</p> <div id="cmd"></div>');
@@ -63,9 +67,9 @@ $(document).ready(async function () {
 
     }
   }
-  loadCmd(param)
+  if (param.cmd) $('.Command').css('display', 'flex'), loadCmd({category: param.cmd})
   $('#categoryMusic').click(() => loadCmd({ category: 'music' }));
   $('#categorySettings').click(() => loadCmd({ category: 'settings' }));
   $('#categoryMisc').click(() => loadCmd({ category: 'misc' }));
-  $('#Command').click(() => { $('.Command').css('display', 'flex'); });
+  $('#Command').click(() => { $('.Command').css('display', 'flex'), loadCmd({category: ''}) });
 });
