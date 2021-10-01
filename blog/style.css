@@ -122,7 +122,7 @@ p {
   word-break: break-all;
   margin-top: 3vh;
   margin-left: 1vw;
-  background-color: #455176;
+  background-color: #47323E;
   border: 0;
   border-radius: 10px;
   padding: 10px
@@ -136,6 +136,10 @@ p {
 #openPage div{
   color: white;
   width: 90%;
+  background-color: #47323E;
+  border: 0;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 #openPage a{

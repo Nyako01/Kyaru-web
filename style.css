@@ -244,11 +244,26 @@ button:focus {
     rgb(0, 0, 0, 0.93)
   );
   }
+  #creditBG{
+     left: unset; 
+    right: 16px; 
+  }
 }
 @media (orientation: landscape) {
   #avatarImg {
     display: block;
   }
+}
+
+#patreon{
+  position: relative;
+}
+
+#patreon img{
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+  width: 4vw;
 }
 
 details {
