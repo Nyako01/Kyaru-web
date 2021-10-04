@@ -264,6 +264,12 @@ button:focus {
   top: 3vh;
   right: 2vw;
   width: 4vw;
+  opacity: 0.7;
+  transition: 0.25s;
+}
+
+#patreon img:hover{
+  opacity: 1;
 }
 
 details {

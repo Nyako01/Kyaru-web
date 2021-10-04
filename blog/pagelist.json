@@ -1,5 +1,10 @@
 [
     {
+        "name": "Change-Log-102",
+        "pinned": false,
+        "hidden": true
+    },
+    {
         "name": "getting-start",
         "pinned": true,
         "hidden": false
@@ -7,11 +12,6 @@
     {
         "name": "back-to-old-server",
         "pinned": true,
-        "hidden": false
-    },
-    {
-        "name": "Change-Log-102",
-        "pinned": false,
         "hidden": true
     }
 ]

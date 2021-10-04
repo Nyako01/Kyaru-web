@@ -109,6 +109,7 @@ p {
   align-content: flex-start;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-direction: row;
 }
 
 .page a{
@@ -118,14 +119,19 @@ p {
 
 .page span {
   display: block;
-  width: 20vw;
+  width: 25vw;
   word-break: break-all;
   margin-top: 3vh;
   margin-left: 1vw;
   background-color: #47323E;
   border: 0;
-  border-radius: 10px;
-  padding: 10px
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.25s;
+}
+
+.page span:hover{
+  border-radius: 5px;
 }
 
 #openPage{
@@ -149,4 +155,19 @@ p {
 
 #openPage a:hover{
   color: rgb(115, 171, 255);
+}
+
+@media (orientation: landscape) {
+  .page {
+    flex-direction: row;
+  }
+}
+
+@media (orientation: portrait) {
+  .page {
+    flex-direction: column;
+  }
+  .page span{
+    width: 70vw;
+  }
 }

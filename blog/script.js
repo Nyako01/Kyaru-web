@@ -22,7 +22,7 @@ $(document).ready(function () {
                 //console.log(data, data.length)
                 if (lenght > 0) {
                     const trimp = data.slice(0, lenght)
-                    const page = (linkPage) ? `<a href="?page=${md}"><span>${marked(trimp)}...</span></a>` : `<span>${marked(trimp)}</span>`
+                    const page = (linkPage) ? `<a href="?page=${md}"><span>${marked(trimp)} ...</span></a>` : `<span>${marked(trimp)}</span>`
                     $(`#${elementId}`).append(page);
                 } else { $(`#${elementId}`).append(`<div>${marked(data)}</div>`); }
 
